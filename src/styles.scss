@@ -10,3 +10,93 @@
 #webpack-img-2 {
 	position: relative;
 }
+
+.paragraph {
+	max-width: 900px;
+	text-align: center;
+	overflow: hidden;
+}
+
+.home {
+    position: relative;
+}
+
+.layout {
+    width: 100%;
+    position: relative;
+    display: block;
+    z-index: 1000;
+    overflow-x: hidden;
+}
+
+.mission-phase {
+    position: relative;
+    z-index: 2000;
+    min-height: 100vh;
+    margin: 0 auto;
+    max-width: 500px;
+    text-align: center;
+    display: box;
+    display: flex;
+    box-orient: vertical;
+    box-direction: normal;
+    flex-direction: column;
+    box-pack: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+}
+
+.mission-stage {
+    pointer-events: none;
+    position: fixed;
+    z-index: 3000;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.mission-stage .sprite {
+    position: absolute;
+    transform-origin: center;
+    transition: all 333ms ease-out;
+}
+
+#mission_moon {
+    width: 2000px;
+    height: 2000px;
+    transition: all 1s ease-in-out;
+    left: 50vw;
+    top: 25vh;
+    transform: translate(-50%, 50vh);
+}
+
+#mission_moon-diffuse {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#mission_moon-specular {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 53.5%;
+    height: auto;
+    overflow: hidden;
+    left: calc( 50% + 1px);
+}
+
+#mission_moon-landing, #mission_moon-farm {
+    top: 50%;
+    left: 50%;
+    height: 50%;
+    transition: all 1s ease-in-out;
+    transform: translate(-50%, -100%) rotate(80deg);
+    transform-origin: bottom;
+}
+#mission_moon-landing img, #mission_moon-farm img {
+    top: -300px;
+    transform: translateX(-50%) scale(0.9);
+}
